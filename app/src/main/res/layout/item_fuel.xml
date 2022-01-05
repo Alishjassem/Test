@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.magma.aomlati.model.Fuel" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.magma.aomlati.utils.listeners.RecyclerItemListener" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_parent"
+        style="@style/MaterialCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        app:cardBackgroundColor="@color/semi_blue"
+        app:strokeColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{()->viewModel.onItemClicked(item, position)}"
+            android:paddingVertical="@dimen/spacing_large">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_icon"
+                android:layout_width="@dimen/image_category_item_size"
+                android:layout_height="@dimen/image_category_item_size"
+                android:layout_marginStart="@dimen/spacing_default"
+                android:src="@drawable/ic_fuel"
+                android:tint="@color/white"
+                android:background="@drawable/bg_circle"
+                android:padding="@dimen/spacing_large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/product_sans_bold"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/spacing_default"
+                text_translate="@{item.name}"
+                android:layout_marginEnd="@dimen/spacing_default"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/lyt_values"
+                app:layout_constraintStart_toEndOf="@+id/img_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="@string/currency" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_values"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/spacing_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txt_title"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_percent"
+                    style="@style/MaterialTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{item.changePercent.toString()}"
+                    android:textColor="@color/white"
+                    tools:text="@string/currency" />
+
+                <TextView
+                    android:id="@+id/txt_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{item.lastPrice.toString()}"
+                    android:textColor="@color/orange_1"
+                    android:textSize="@dimen/size_medium"
+                    tools:text="@string/currency" />
+
+                <TextView
+                    android:id="@+id/txt_last_update"
+                    text_time="@{item.lastPriceUpdate}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:textColor="@color/grey_2"
+                    android:textSize="@dimen/size_tiny"
+                    tools:text="@string/currency" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

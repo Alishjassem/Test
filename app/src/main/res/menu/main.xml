@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_fuel"
+        android:icon="@drawable/ic_fuel"
+        android:title="@string/fuel" />
+    <item
+        android:id="@+id/nav_metal"
+        android:icon="@drawable/ic_gold"
+        android:title="@string/metal" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_converter"
+        android:icon="@drawable/ic_converter"
+        android:title="@string/converter_toolbar" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+</menu>

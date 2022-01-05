@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">عملاتي</string>
+    <string name="welome_text">خدمات مدعومة من التطبيق</string>
+    <string name="next">التالي</string>
+
+    <!-- Home  -->
+
+    <string name="title_home">الرئيسية</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="currency">العملة</string>
+    <string name="coins">عملة مشفرة</string>
+    <string name="sell">بيع</string>
+    <string name="buy">شراء</string>
+    <string name="graph">رسم بياني</string>
+
+    <!-- Metal -->
+
+    <string name="title_metal">معادن</string>
+    <string name="metal">معدن</string>
+    <string name="gold">ذهب</string>
+    <string name="silver">فضة</string>
+    <string name="gold_price">أسعار الذهب</string>
+    <string name="silver_price">أسعار الفضة</string>
+    <string name="inside_turkey">داخل تركيا</string>
+    <string name="outside_turkey">خارج تركيا</string>
+
+    <!-- Fuel -->
+
+    <string name="title_fuel">الوقود</string>
+    <string name="fuel">الوقود</string>
+
+    <!-- Currency Converter -->
+
+    <string name="title_converter">محول العملات</string>
+    <string name="converter">محول العملات</string>
+    <string name="converter_toolbar">المحول</string>
+    <string name="converter_currency">محول العملة التي تريد</string>
+
+    <!-- Settings -->
+
+    <string name="title_settings">إعدادات</string>
+    <string name="settings">إعدادات</string>
+    <string name="general_settings">إعدادات عامة</string>
+    <string name="currency_settings">اختر العملات المفضلة</string>
+    <string name="dark_mode">الوضع الليلي</string>
+    <string name="light_mode">الوضع النهاري</string>
+    <string name="dark">ليلي</string>
+    <string name="light">نهاري</string>
+    <string name="font_size">حجم الخط</string>
+    <string name="language">اللغة</string>
+    <string name="langauge_ar">العربي</string>
+    <string name="langauge_en">الإنجليزي</string>
+    <string name="langauge_tr">التركي</string>
+
+    <!-- About us -->
+
+    <string name="about_us">من نحن</string>
+
+    <string name="connected">متصل</string>
+    <string name="no_internet_connection">لا يوجد إتصال بالإنترنت!</string>
+
+    <string name="loading">الرجاء الإنتظار…</string>
+    <string name="share_link_body">حمل التطبيق باستخدام هذا الرابط: </string>
+    <string name="copied">تم النسخ</string>
+    <string name="TRY">الليرة التركية</string>
+    <string name="EUR">اليورو</string>
+    <string name="SYP">الليرة السورية</string>
+    <string name="LBP">الليرة اللبنانية</string>
+    <string name="IQD">الدينار العراقي</string>
+    <string name="EGP">الجنيه المصري</string>
+    <string name="CHZ">تشيليز</string>
+    <string name="USDT">تيثر</string>
+    <string name="LTC">لايت كوين</string>
+    <string name="BNB">بايننس كوين</string>
+    <string name="XMR">مونيرو</string>
+    <string name="DOGE">دوغ كوين</string>
+    <string name="ETH">إيثيريوم</string>
+    <string name="BTG">بيتكوين غولد</string>
+    <string name="BTC">بيتكوين</string>
+    <string name="IRR">الريال الأيراني</string>
+    <string name="SDG">الجنيه السوداني</string>
+    <string name="LYD">الدينار الليبي</string>
+    <string name="TND">الدينار التونسي</string>
+    <string name="DZD">الدينار الجزائري</string>
+    <string name="JOD">الدينار الاردني</string>
+    <string name="MAD">الدرهم المغربي</string>
+    <string name="ILS">الشيكل</string>
+    <string name="YER">الريال اليمني</string>
+    <string name="OMR">الريال العماني</string>
+    <string name="BHD">الدينار البحريني</string>
+    <string name="KWD">الدينار الكويتي</string>
+    <string name="QAR">الريال القطري</string>
+    <string name="AED">الدرهم الاماراتي</string>
+    <string name="SAR">الريال السعودي</string>
+    <string name="PKR">الروبية الباكستانية</string>
+    <string name="INR">الروبيل الهندي</string>
+    <string name="JPY">الين الياباني</string>
+    <string name="CNY">الين الصيني</string>
+    <string name="AUD">الدولار الإسترالي</string>
+    <string name="CAD">الدولار الكندي</string>
+    <string name="GBP">الجنيه الأسترليني</string>
+    <string name="choose_the_currencies_you_want_to_receive_notification_for">اختر العملات التي تريد تلقي الاشعارات</string>
+    <string name="enter_the_amount">أدخل القيمة</string>
+    <string name="daily">يومي</string>
+    <string name="monthly">شهري</string>
+    <string name="weekly">اسبوعي</string>
+    <string name="from">من</string>
+    <string name="to">الى</string>
+    <string name="the_result">النتيجة</string>
+    <string name="GD18">18غرام الذهب</string>
+    <string name="GD21">21غرام الذهب</string>
+    <string name="LR">ليرة الذهب</string>
+    <string name="ON">اونصة الذهب</string>
+    <string name="KG">كيلو الذهب</string>
+    <string name="GT9">غرام الذهب 9</string>
+    <string name="GT12">غرام الذهب 12</string>
+    <string name="GT14">غرام الذهب 14</string>
+    <string name="GT18">غرام الذهب 18</string>
+    <string name="GT21">غرام الذهب 21</string>
+    <string name="GT22">غرام الذهب 22</string>
+    <string name="GT24">غرام الذهب 24</string>
+    <string name="GTL">ليرة الذهب</string>
+    <string name="GTO">اونصة الذهب</string>
+    <string name="GTK">كيلو الذهب</string>
+    <string name="SO">اونصة فضة </string>
+    <string name="SK">كيلو فضة </string>
+    <string name="STO">اونصة فضة </string>
+    <string name="STK">كيلو فضة</string>
+    <string name="OK95">95 اوكتان</string>
+    <string name="OK98">98 اوكتان</string>
+    <string name="DI">مازوت</string>
+    <string name="GZ">قارورة غاز </string>
+    <string name="usd">دولار أمركي</string>
+    <string name="push_notification">تفعيل الاشعارات العامة</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="day">منذ يوم واحد</string>
+    <string name="hours">منذ %s ساعات</string>
+    <string name="minut">منذ عدة دقائق</string>
+    <string name="second">قبل ثوان</string>
+    <string name="ago">منذ</string>
+    <string name="days">منذ %s ايام</string>
+    <string name="hour">منذ ساعة واحدة</string>
+    <string name="minuts">قبل %s دقيقة</string>
+    <string name="about_us_txt"> تطبيق عملاتي يعرض اسعار العملات و العملات المشفرة عالميا  كما انه يعرض اسعار الذهب و الفضة داخل و خارج تركيا بالاضافة الي اسعار النفط عالميا يمكنك القيام بتحويل اي مبلغ من عملة الى عملة</string>
+    <string name="no_data">لا توجد أسعار محدثة اليوم</string>
+    <string name="share_the_app">شارك التطبيق</string>
+    <string name="updated">تم تحديث اسعار العملات</string>
+    <string name="from_date">من تاريخ</string>
+    <string name="to_date">إلى تاريخ</string>
+    <string name="all">الكل</string>
+    <string name="get_started">البدء</string>
+    <string name="continue_">الاستمرار</string>
+    <string name="done">تم</string>
+    <string name="search_currencies_here">البحث عن العملات هنا ..</string>
+    <string name="welcome_to_the">أهلا بك في</string>
+    <string name="premium_currency_platform">منصة العملات المميزة</string>
+    <string name="currency_tracker">متعقب العملات</string>
+    <string name="check_live_markets_rates_for_n100_currencies">تحقق من الأسعار الحية\n ل 100 عملة في الأسواق</string>
+    <string name="stock_market">سوق الأوراق المالية</string>
+    <string name="track_gold_oil_and_more_with_live_ntracking_mode">تتبع الذهب والنفط والمزيد باستخدام وضع التتبع \n المباشر.</string>
+    <string name="crypto_market">سوق التشفير</string>
+    <string name="bitcoin_doge_and_much_more_ncrypto_curriencies_tracker">Bitcoin و Doge وأكثر من ذلك بكثير \n أداة تعقب العملات المشفرة</string>
+    <string name="select_the_currency_you_want_to_follow_and_ntrack_and_click_the_icon_to_pin_the_ncurrency_you_want_to_show_first">حدد العملة التي تريد متابعتها \ n وتتبعها ، وانقر فوق الرمز لتثبيت \n العملة التي تريد إظهارها أولاً</string>
+    <string name="cryptocurrency">عملة مشفرة</string>
+    <string name="currency_options">خيارات العملات</string>
+    <string name="pinned_currencies">العملات المثبتة</string>
+    <string name="copy_the_link_below_or_click_on_the_button_for_direct_sharing">انسخ الرابط أدناه أو انقر فوق الزر للمشاركة المباشرة</string>
+    <string name="select_currency_and_enter_amount">حدد العملة وأدخل المبلغ</string>
+    <string name="expired_token">انتهت صلاحية الجلسة</string>
+
+    <string-array name="dropdown_menu">
+        <item>داخل تركيا</item>
+        <item>خارج تركيا</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>إنجليزي</item>
+        <item>عربي</item>
+        <item>تركي</item>
+    </string-array>
+
+    <string-array name="font_sizes">
+        <item>صغير</item>
+        <item>وسط</item>
+        <item>كبير</item>
+    </string-array>
+
+</resources>

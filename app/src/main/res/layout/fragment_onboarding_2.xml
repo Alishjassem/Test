@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.magma.aomlati.presentation.onboarding.OnBoardingViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_splash_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_ellipse_left"
+            android:layout_width="240dp"
+            android:layout_height="222dp"
+            android:src="@drawable/bg_ellipse_2"
+            android:translationX="-150dp"
+            android:layoutDirection="ltr"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_ellipse_right"
+            android:layout_width="240dp"
+            android:layout_height="222dp"
+            android:src="@drawable/bg_ellipse_2"
+            android:translationX="150dp"
+            android:layoutDirection="ltr"
+            app:layout_constraintBottom_toTopOf="@+id/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/lyt_board"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:text="@string/currency_tracker"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/size_header"
+            android:fontFamily="@font/product_sans_bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_sub_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_board" />
+
+        <TextView
+            android:id="@+id/txt_sub_title"
+            style="@style/MaterialTextTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:paddingVertical="@dimen/spacing_large"
+            android:text="@string/check_live_markets_rates_for_n100_currencies"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/product_sans_bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_profile_top"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:minHeight="0dp"
+            android:padding="@dimen/spacing_large"
+            android:text="@string/continue_"
+            app:icon="@drawable/ic_arrow_right"
+            app:iconGravity="end"
+            app:iconTint="@color/white"
+            android:fontFamily="@font/product_sans_bold"
+            android:textSize="@dimen/size_medium"
+            app:cornerRadius="@dimen/vertical_10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sub_title" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/progress_step"
+            android:layout_marginVertical="7dp"
+            app:layout_constraintWidth_percent="0.2"
+            android:elevation="@dimen/spacing_medium"
+            app:layout_constraintStart_toStartOf="@id/btn_continue"
+            app:layout_constraintTop_toTopOf="@id/btn_continue"
+            app:layout_constraintBottom_toBottomOf="@id/btn_continue"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

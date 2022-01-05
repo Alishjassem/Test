@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.magma.aomlati.model.Currency" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.magma.aomlati.utils.listeners.RecyclerItemListener" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_parent"
+        style="@style/MaterialCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        app:cardBackgroundColor="@color/dark_gray"
+        app:strokeColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{()->viewModel.onItemClicked(item, position)}"
+            android:paddingVertical="@dimen/spacing_large">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                android:fontFamily="@font/product_sans_bold"
+                android:paddingHorizontal="@dimen/spacing_large"
+                android:text="@{item.symbol}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_title"
+                app:layout_constraintBottom_toTopOf="@+id/txt_desc"
+                app:layout_constraintEnd_toStartOf="@+id/check_favorite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txt_desc"
+                style="@style/MaterialTextViewBodyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                android:paddingHorizontal="@dimen/spacing_large"
+                text_translate="@{item.name}"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/check_favorite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+            <CheckBox
+                android:id="@+id/check_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/vertical_20dp"
+                android:button="@drawable/check_favorite"
+                android:buttonTint="@color/white"
+                android:minWidth="0dp"
+                android:checked="@{item.favorite}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

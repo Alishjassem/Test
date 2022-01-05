@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3omlati</string>
+    <string name="welome_text">Uygulamadan Sağlanan Hizmetler</string>
+    <string name="next">Sonraki</string>
+
+    <!-- Home  -->
+
+    <string name="title_home">Ana Sayfa</string>
+    <string name="home">Ana Sayfa</string>
+    <string name="currency">Para Birimi</string>
+    <string name="coins">Madani Para</string>
+    <string name="sell">Satmak</string>
+    <string name="buy">Satın Almak</string>
+    <string name="graph">Grafik</string>
+
+    <!-- Metal -->
+
+    <string name="title_metal">Metal</string>
+    <string name="metal">Metal</string>
+    <string name="gold">Altın</string>
+    <string name="silver">Gümüş</string>
+    <string name="gold_price">Altın Fiyatları</string>
+    <string name="silver_price">Gümüş Fiyatları</string>
+    <string name="inside_turkey">Türkiye içinde</string>
+    <string name="outside_turkey">Türkiye dışında</string>
+
+    <!-- Fuel -->
+
+    <string name="title_fuel">Yakıt</string>
+    <string name="fuel">Yakıt</string>
+
+    <!-- Currency Converter -->
+
+    <string name="title_converter">Döviz Çevirici</string>
+    <string name="converter">Döviz Çevirici</string>
+    <string name="converter_toolbar">Çevirici</string>
+    <string name="converter_currency">Çevirici Herhangi Para Birimi</string>
+
+    <!-- Settings -->
+
+    <string name="title_settings">Ayarlar</string>
+    <string name="settings">Ayarlar</string>
+    <string name="general_settings">Genel Ayarlar</string>
+    <string name="currency_settings">Tercih Edilen Para Birimlerini Seçin</string>
+    <string name="dark_mode">Karanlık Mod</string>
+    <string name="light_mode">Lumière Mod</string>
+    <string name="dark">Karanlık Mod</string>
+    <string name="light">Beyaz Mod</string>
+    <string name="font_size">Yazı Boyutu</string>
+    <string name="language">Dil</string>
+    <string name="langauge_ar">Arabça</string>
+    <string name="langauge_en">İnglizce</string>
+    <string name="langauge_tr">Türkçe</string>
+
+    <!-- About us -->
+
+    <string name="about_us">Hakkımızda</string>
+
+    <string name="connected">Bağlı</string>
+    <string name="no_internet_connection">İnternet bağlantısı yok!</string>
+
+    <string name="loading">Lütfen Bekle…</string>
+    <string name="share_link_body">Bu Linki kullanarak uygulamayı indirin: </string>
+    <string name="copied">Panoya kopyalandı</string>
+    <string name="JOD">Ürdün Dinarı</string>
+    <string name="MAD">Fas Dirhemi</string>
+    <string name="ILS">Şekel</string>
+    <string name="YER">Yemen Riyali</string>
+    <string name="OMR">Umman Riyali</string>
+    <string name="BHD">Bahreyn Dinarı</string>
+    <string name="TRY">Türk Lirası</string>
+    <string name="EUR">Euro</string>
+    <string name="SYP">Suriye Lirası</string>
+    <string name="LBP">Lübnan Lirası</string>
+    <string name="IQD">Irak Dinarı</string>
+    <string name="EGP">Mısır Lirası</string>
+    <string name="CHZ">Chiliz</string>
+    <string name="USDT">Tether</string>
+    <string name="LTC">Litecoin</string>
+    <string name="BNB">Binance Coin</string>
+    <string name="XMR">Monero</string>
+    <string name="DOGE">DogeCoin</string>
+    <string name="ETH">Ethereum</string>
+    <string name="BTG">Bitcoin Gold</string>
+    <string name="BTC">Bitcoin</string>
+    <string name="IRR">İran Riyali</string>
+    <string name="SDG">Sudan Lirası</string>
+    <string name="LYD">Libya Dinarı</string>
+    <string name="TND">Tunus Dinarı</string>
+    <string name="DZD">Cezayir Dinarı</string>
+    <string name="KWD">Küveyt Dinarı</string>
+    <string name="QAR">Katar Riyali</string>
+    <string name="AED">Birleşik Arap Emirlikleri Dirhemi</string>
+    <string name="SAR">Suudi Riyali</string>
+    <string name="PKR">Pakistan rupisi</string>
+    <string name="INR">Hint Rublesi</string>
+    <string name="JPY">Japon Yeni</string>
+    <string name="CNY">Çin yeni</string>
+    <string name="AUD">Avustralya doları</string>
+    <string name="CAD">Kanada Doları</string>
+    <string name="GBP">sterlin sterlini</string>
+    <string name="choose_the_currencies_you_want_to_receive_notification_for">Bildirim almak istediğiniz para birimlerini seçin</string>
+    <string name="enter_the_amount">Tutarı girin</string>
+    <string name="daily">günlük</string>
+    <string name="weekly">haftalık</string>
+    <string name="monthly">aylık</string>
+    <string name="from">itibaren</string>
+    <string name="to">ile</string>
+    <string name="the_result">sonuç</string>
+    <string name="GD18">altın gram 18</string>
+    <string name="GD21">altın gram 21</string>
+    <string name="LR">altın lira</string>
+    <string name="ON">altın ons</string>
+    <string name="KG">kilo altın</string>
+    <string name="GT9">altın gram 9</string>
+    <string name="GT12">altın gram 12</string>
+    <string name="GZ">gaz</string>
+    <string name="DI">dizel</string>
+    <string name="OK98">oktan 98</string>
+    <string name="OK95">oktan 95</string>
+    <string name="STK">gümüş kilo</string>
+    <string name="STO">gümüş ons</string>
+    <string name="SO">gümüş ons</string>
+    <string name="SK">gümüş kilo</string>
+    <string name="GTK">kilo altın</string>
+    <string name="GTO">altın ons</string>
+    <string name="GTL">altın lira</string>
+    <string name="GT24">altın gram 24</string>
+    <string name="GT22">altın gram 22</string>
+    <string name="GT21">altın gram 21</string>
+    <string name="GT18">altın gram 18</string>
+    <string name="GT14">altın gram 14</string>
+    <string name="usd">Amerikan doları</string>
+    <string name="push_notification">Genel Bildirimleri Etkinleştir</string>
+    <string name="notifications">Bildirimleri</string>
+    <string name="day">bir gün önce</string>
+    <string name="hours">%s saatler önce</string>
+    <string name="minut">birkaç dakika önce</string>
+    <string name="second">bir kaç saniye önce</string>
+    <string name="ago">evvel</string>
+    <string name="days">%s günler önce</string>
+    <string name="hour">bir saat önce</string>
+    <string name="minuts">%s dakika önce</string>
+    <string name="about_us_txt">Dövizlerim uygulama Araplar, uluslararası ve kripto para birimlerini gösterir.Ayrıca, Türkiye içersinde ve dışarısında Altın, Gümüş ve Petrol fiyatları gösterir.Döviz çevrici kullanarak para birimler arasında çevirebilir.</string>
+    <string name="no_data">Bugün güncellenmiş fiyatlar yok</string>
+    <string name="share_the_app">Uygulamayı Paylaş</string>
+    <string name="updated">Döviz fiyatları güncellendi</string>
+    <string name="from_date">itibaren</string>
+    <string name="to_date">Bugüne kadar</string>
+    <string name="all">Her şey</string>
+    <string name="get_started">Başlamak</string>
+    <string name="continue_">Devam et</string>
+    <string name="done">Tamamlandı</string>
+    <string name="search_currencies_here">Burada para birimleri arayın..</string>
+    <string name="welcome_to_the">Hoşgeldiniz</string>
+    <string name="premium_currency_platform">Premium\nPara Birimi Platformu</string>
+    <string name="currency_tracker">Para Birimi İzleyici</string>
+    <string name="check_live_markets_rates_for_n100_currencies">100+ Para Birimi\niçin canlı piyasa oranlarını kontrol edin</string>
+    <string name="stock_market">Borsa</string>
+    <string name="track_gold_oil_and_more_with_live_ntracking_mode">Altın, petrol ve daha fazlasını canlı takip\nizleme moduyla takip edin.</string>
+    <string name="crypto_market">Kripto Pazarı</string>
+    <string name="bitcoin_doge_and_much_more_ncrypto_curriencies_tracker">Bitcoin, Doge ve çok daha fazlası\nkripto para birimi takipçisi</string>
+    <string name="select_the_currency_you_want_to_follow_and_ntrack_and_click_the_icon_to_pin_the_ncurrency_you_want_to_show_first">Takip etmek ve\nizlemek istediğiniz para birimini seçin ve önce göstermek istediğiniz\npara birimini sabitlemek için simgeyi tıklayın</string>
+    <string name="cryptocurrency">Kripto para</string>
+    <string name="currency_options">Para Birimi Seçenekleri</string>
+    <string name="pinned_currencies">Sabitlenmiş Para Birimleri</string>
+    <string name="copy_the_link_below_or_click_on_the_button_for_direct_sharing">Aşağıdaki bağlantıyı kopyalayın veya doğrudan paylaşım için düğmeye tıklayın</string>
+    <string name="select_currency_and_enter_amount">Para Birimi\'ni seçin ve Tutarı girin</string>
+    <string name="expired_token">Süresi Dolmuş Jeton</string>
+
+    <string-array name="dropdown_menu">
+        <item>Türkiye içinde</item>
+        <item>Türkiye dışında</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>ingilizce</item>
+        <item>Arapça</item>
+        <item>hindi</item>
+    </string-array>
+
+    <string-array name="font_sizes">
+        <item>Küçük</item>
+        <item>Orta</item>
+        <item>Büyük</item>
+    </string-array>
+
+</resources>

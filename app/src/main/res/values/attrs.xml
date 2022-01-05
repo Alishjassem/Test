@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Ali Al-Sheekh Jassem on 4/14/21 12:23 PM
+  ~ Copyright (c) 2021 . All rights reserved .
+  ~ Last modified 4/14/21 12:23 PM
+  -->
+
+<resources>
+    <attr name="attrBackgroundColor" format="color"/>
+    <attr name="attrTextViewColor" format="color"/>
+    <attr name="attrIconColor" format="color"/>
+
+    <attr name="attrPrimaryColor" format="color"/>
+    <attr name="attrToolBarBackgroundColor" format="color"/>
+    <attr name="attrButtonColor" format="color"/>
+    <attr name="attrKeypadButtonColor" format="color"/>
+    <attr name="attrKeypadAddButtonColor" format="color"/>
+    <attr name="attrEditTextColor" format="color"/>
+    <attr name="attrImageTextColor" format="color"/>
+    <attr name="attrImageTintColor" format="color"/>
+    <attr name="attrPosItemColor" format="color"/>
+    <attr name="attrPosItemTextColor" format="color"/>
+    <attr name="attrPosItemBackgroundColor" format="color"/>
+    <attr name="attrEmptyPosItemBackgroundColor" format="color"/>
+    <attr name="attrSelectedTabColor" format="color"/>
+    <attr name="attrTextTabColor" format="color"/>
+    <attr name="attrIconSelectedTabColor" format="color"/>
+    <attr name="attrTabBackgroundColor" format="color"/>
+    <attr name="attrTabScrollableColor" format="color"/>
+    <attr name="attrMenuDropDownColor" format="color"/>
+    <attr name="attrToggleNotification" format="color"/>
+</resources>

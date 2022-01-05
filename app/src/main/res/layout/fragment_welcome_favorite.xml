@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.magma.aomlati.presentation.onboarding.OnBoardingViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_splash_5">
+
+        <ImageView
+            android:id="@+id/img_board"
+            android:layout_width="@dimen/image_product_create_size"
+            android:layout_height="@dimen/image_product_create_size"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="top"
+            android:padding="@dimen/spacing_large"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/spacing_large"
+            app:layout_constraintBottom_toTopOf="@+id/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/MaterialTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:text="@string/select_the_currency_you_want_to_follow_and_ntrack_and_click_the_icon_to_pin_the_ncurrency_you_want_to_show_first"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/edt_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_board" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            style="@style/MaterialEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_navigation_top"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:autofillHints="@string/app_name"
+            android:background="@drawable/bg_rounded"
+            android:inputType="text"
+            android:padding="@dimen/spacing_default"
+            tools:ignore="LabelFor"
+            android:hint="@string/search_currencies_here"
+            android:drawablePadding="@dimen/spacing_default"
+            android:textSize="@dimen/size_body"
+            android:drawableStart="@drawable/ic_search"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_currencies"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:overScrollMode="ifContentScrolls"
+            tools:listitem="@layout/item_favorite_currency"
+            android:paddingVertical="@dimen/spacing_medium"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_search"
+            app:layout_constraintBottom_toTopOf="@+id/btn_continue"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_search"
+            app:layout_constraintBottom_toTopOf="@+id/btn_continue"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_profile_top"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:minHeight="0dp"
+            android:paddingVertical="@dimen/spacing_large"
+            android:paddingHorizontal="@dimen/spacing_default"
+            android:text="@string/continue_"
+            android:textAllCaps="false"
+            android:fontFamily="@font/product_sans_bold"
+            android:textSize="@dimen/size_medium"
+            app:cornerRadius="@dimen/vertical_10dp"
+            android:textColor="@color/white"
+            android:onClick="@{()->viewModel.onContinue()}"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

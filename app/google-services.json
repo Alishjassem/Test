@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "196381743086",
+    "project_id": "my-currencies-1bf1b",
+    "storage_bucket": "my-currencies-1bf1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196381743086:android:fe214ebe9d0f4f0e68a0ff",
+        "android_client_info": {
+          "package_name": "com.magma.aomlati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196381743086-fqnp2tllpb2kg9kk3ho7lpglog36kkta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magma.aomlati",
+            "certificate_hash": "a7f5a7c97c65787e8a5138e1250c3ff9ea4422e2"
+          }
+        },
+        {
+          "client_id": "196381743086-ka188tedq5gofta1leupd9m2hiq9f3fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magma.aomlati",
+            "certificate_hash": "dc55c4dbba6c6927e2b8691db898c188f9bb9d3a"
+          }
+        },
+        {
+          "client_id": "196381743086-pkgkrvnubje42r2hmih6rpk91m1hq3nr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3RxNODz3ggPVG5_lD_QNJVYW7CAHHARk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196381743086-pkgkrvnubje42r2hmih6rpk91m1hq3nr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "196381743086-9imcn5lukkh21p8mndl44n5n7803th3p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.magma.my-currencies"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

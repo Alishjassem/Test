@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.magma.aomlati.model.Currency" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.magma.aomlati.utils.listeners.RecyclerItemListener" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_parent"
+        style="@style/MaterialCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        app:cardBackgroundColor="@color/semi_blue"
+        app:strokeColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{()->viewModel.onItemClicked(item, position)}"
+            android:paddingVertical="@dimen/spacing_large">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                android:fontFamily="@font/product_sans_bold"
+                android:paddingHorizontal="@dimen/spacing_large"
+                text_translate="@{item.name}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_title"
+                tools:text="@string/currency"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/txt_desc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txt_desc"
+                style="@style/MaterialTextViewBodyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                android:paddingHorizontal="@dimen/spacing_large"
+                android:text="@{item.symbol}"
+                android:gravity="center"
+                tools:text="@string/currency"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+            <TextView
+                android:id="@+id/txt_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_default"
+                android:fontFamily="@font/product_sans_bold"
+                android:paddingHorizontal="@dimen/spacing_large"
+                android:text="@{item.lastPrice.toString() + ` ` + item.symbol}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_header"
+                tools:text="@string/currency"
+                app:layout_constraintEnd_toStartOf="@+id/chart_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_desc"/>
+
+            <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+                android:id="@+id/chart_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/lyt_percent"
+                app:layout_constraintStart_toEndOf="@+id/txt_value"
+                app:layout_constraintTop_toTopOf="@+id/txt_value"/>
+
+            <TextView
+                android:id="@+id/txt_last_update"
+                style="@style/MaterialTextViewBodyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:paddingHorizontal="@dimen/spacing_large"
+                text_time="@{item.lastPriceUpdate}"
+                tools:text="@string/currency"
+                android:textColor="@color/grey_2"
+                app:layout_constraintEnd_toStartOf="@+id/chart_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_value" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lyt_percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_last_update">
+                <TextView
+                    android:id="@+id/txt_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:paddingHorizontal="@dimen/spacing_large"
+                    android:text="@{item.changePercent.toString()}"
+                    android:textColor="@color/orange_1"
+                    android:textSize="@dimen/size_medium"
+                    tools:text="@string/currency"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_dollar_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:text="@{item.lastPrice.toString()}"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_medium"
+                    tools:text="@string/currency"
+                    android:gravity="center"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
